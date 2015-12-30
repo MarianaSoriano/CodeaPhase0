@@ -23,3 +23,19 @@ p mode([0, 1, 2, 3, 4, 0])
 # p mode([1, 2, 2, 3, 3, 4]) == [2, 3]
 # p mode([1, 2, 3]) == [1, 2, 3]
 # p mode([0, 1, 2, 3, 4, 0]) == [0]
+
+# def mode(array)
+#   freq_array = []
+#   hash = Hash.new(0)
+#   array.each do |default|
+#     hash[default]+=1
+#   end
+#   hash.select do
+#     |num, freq| freq_array << num unless freq < 2
+#   end
+#   freq_array
+# end
+# p mode([1, 2, 2, 3]) == [2]
+# p mode([1, 2, 2, 3, 3, 4]) == [2, 3]
+# p mode([1, 2, 3]) == [1, 2, 3]
+# p mode([0, 1, 2, 3, 4, 0]) == [0]
